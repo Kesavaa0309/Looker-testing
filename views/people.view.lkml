@@ -1,13 +1,13 @@
 view: people {
-  sql_table_name: "PUBLIC"."PEOPLE" ;;
+  sql_table_name: `people` ;;
 
   dimension: c1 {
     type: string
-    sql: ${TABLE}."C1" ;;
+    sql: ${TABLE}.`C1` ;;
   }
   dimension: c2 {
     type: string
-    sql: ${TABLE}."C2" ;;
+    sql: ${TABLE}.`C2` ;;
   }
   measure: count {
     type: count
